@@ -11,7 +11,7 @@
   "files": [
     "lib"
   ],
-  "main": "lib/index.js",
+  "main": "src/index.js",
   "keywords": [
     "schema",
     "validation",
@@ -32,7 +32,6 @@
     "eslint-plugin-jsx-a11y": "^1.5.5",
     "eslint-plugin-mocha": "^4.0.0",
     "eslint-plugin-react": "^5.2.2",
-    "gulp": "^3.9.1",
     "gulp-babel": "^5.1.0",
     "gulp-coveralls": "^0.1.0",
     "gulp-eslint": "^2.0.0",
@@ -44,7 +43,7 @@
     "gulp-plumber": "^1.1.0",
     "isparta": "^3.0.3"
   },
-  "repository": "https://github.com/dettier/sculp.git",
+  "repository": "https://github.com/disarticulate/sculp.git",
   "scripts": {
     "prepublish": "gulp prepublish",
     "test": "gulp"
@@ -52,6 +51,7 @@
   "license": "MIT",
   "dependencies": {
     "debug": "^2.2.0",
+    "gulp": "^3.9.1",
     "lodash-compat": "^3.10.2",
     "underscore.string": "^3.3.4"
   }
