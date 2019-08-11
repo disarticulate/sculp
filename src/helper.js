@@ -206,8 +206,12 @@ export const getRemoveEmptyValue = (fieldSchema, context) => {
 
 export const getInitial = function (schema) {
 
-  if (schema.hasOwnProperty('initial'))
-    return schema.initial;
+  if (schema.hasOwnProperty('initial')) {
+    let initial = (typeof schema.initial === typeof Function)
+      ? schema.initial()
+      : schema.initial;
+    return initial;
+  }
 
   let result = undefined;
 
